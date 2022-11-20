@@ -37,7 +37,7 @@ const MenuApi = [
     id: 5,
     img: { Maggi },
     name: "Wadapav",
-    category: "Breakfast",
+    category: "Lunch",
     price: 20,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quae magnam ipsam earum ad odio temporibus, qui assumenda hic sit non amet omnis minus cupiditate?"
   },

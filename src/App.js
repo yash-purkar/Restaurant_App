@@ -5,7 +5,6 @@ import Restaurant from './components/Restaurant'
 function App() {
   return (
     <>
-
       <Restaurant />
     </>
   );
