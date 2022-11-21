@@ -13,6 +13,7 @@ import Poha from "./Images/Poha.jpg"
 import Apple from "./Images/Apple.jpg"
 import Orange from "./Images/Orange.jpg"
 import Pinnaple from "./Images/Pinnaple.jpg"
+import Strawberry from "./Images/Strawberry.jpg"
 
 const MenuApi = [
   //  Breakfast
@@ -143,6 +144,15 @@ const MenuApi = [
     name: "Orange",
     category: "Fruits",
     price: "80KG",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quae magnam ipsam earum ad odio temporibus, qui assumenda hic sit non amet omnis minus cupiditate?"
+  },
+  {
+    num: 4,
+    id: 15,
+    img: Strawberry,
+    name: "StrawBerry",
+    category: "Fruits",
+    price: "300KG",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quae magnam ipsam earum ad odio temporibus, qui assumenda hic sit non amet omnis minus cupiditate?"
   },
 
