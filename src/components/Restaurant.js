@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 
 const uniqueList = [...new Set(MenuApi.map((currElem) => {
   return currElem.category;
-}))]
+})), "All"]
 // console.log(uniqueList);
 
 
@@ -15,6 +15,9 @@ const Restaurant = () => {
   const [menuList, setMenuList] = useState(uniqueList);
 
   const filterItem = (category) => {
+    if (category === "All") {
+      return setMenuData(MenuApi);
+    }
     const updatedList = MenuApi.filter((currElem) => {
       return currElem.category === category;
     })

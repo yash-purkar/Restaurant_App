@@ -6,29 +6,14 @@ const Navbar = ({ filterItem, uniqueList }) => {
     <nav className='navbar'>
       <div className="btn_group">
         {
-          uniqueList.map((currElem) => {
+          uniqueList.map((currElem, indx) => {
             return (
-              <button className="btn" onClick={() => filterItem(currElem)}>
+              <button className="btn" onClick={() => filterItem(currElem)} key={indx}>
                 {currElem}
               </button>
             )
           })
         }
-        {/* <button className="btn" onClick={() => filterItem("Breakfast")}>
-          Breakfast
-        </button>
-        <button className="btn" onClick={() => filterItem("Lunch")}>
-          Lunch
-        </button>
-        <button className="btn" onClick={() => filterItem("Dinner")}>
-          Dinner
-        </button>
-        <button className="btn" onClick={() => filterItem("Evening")}>
-          Evening
-        </button> */}
-        {/* <button className="btn" onClick={() => filterItem("All")}>
-          All
-        </button> */}
       </div>
     </nav>
   )
