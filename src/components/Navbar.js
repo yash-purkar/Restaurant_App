@@ -1,13 +1,20 @@
 import React from 'react'
 
-const Navbar = (props) => {
-  const filterItem = (category) => {
-    props.filterItem(category)
-  }
+const Navbar = ({ filterItem, uniqueList }) => {
+
   return (
     <nav className='navbar'>
       <div className="btn_group">
-        <button className="btn" onClick={() => filterItem("Breakfast")}>
+        {
+          uniqueList.map((currElem) => {
+            return (
+              <button className="btn" onClick={() => filterItem(currElem)}>
+                {currElem}
+              </button>
+            )
+          })
+        }
+        {/* <button className="btn" onClick={() => filterItem("Breakfast")}>
           Breakfast
         </button>
         <button className="btn" onClick={() => filterItem("Lunch")}>
@@ -18,10 +25,10 @@ const Navbar = (props) => {
         </button>
         <button className="btn" onClick={() => filterItem("Evening")}>
           Evening
-        </button>
-        <button className="btn" onClick={() => filterItem("All")}>
+        </button> */}
+        {/* <button className="btn" onClick={() => filterItem("All")}>
           All
-        </button>
+        </button> */}
       </div>
     </nav>
   )
