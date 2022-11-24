@@ -147,3 +147,42 @@ hr {
   cursor: pointer;
   border-bottom: 1px solid white;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .card_container {
+    width: 900px;
+    /* border: 1px solid black; */
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    gap: 2rem;
+  }
+  .card {
+    width: 400px;
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid blueviolet;
+    background-color: #f8f1ff;
+
+    border-radius: 0.5rem;
+  }
+  .navbar {
+    /* width: 100%; */
+    margin-left: 37%;
+  }
+  .btn_group {
+    /* width: 800px; */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto 100px auto;
+    background-color: blueviolet;
+    padding: 25px 35px;
+
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}

@@ -3,6 +3,7 @@ import React from 'react'
 const Navbar = ({ filterItem, uniqueList }) => {
 
   return (
+
     <nav className='navbar'>
       <div className="btn_group">
         {
