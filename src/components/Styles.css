@@ -147,3 +147,28 @@ hr {
   cursor: pointer;
   border-bottom: 1px solid white;
 }
+
+@media only screen and (max-width: 768px) {
+  .main_card_container {
+    width: 100%;
+    margin: 0px;
+  }
+  .card_container {
+    display: flex;
+    width: 250px;
+    /* align-items: center; */
+  }
+  .navbar {
+    width: 100%;
+  }
+  .btn_group {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn:hover {
+    color: lightgray;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+  }
+}
