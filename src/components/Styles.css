@@ -158,13 +158,22 @@ hr {
     width: 250px;
     /* align-items: center; */
   }
+  .card {
+    margin-bottom: 15px;
+  }
   .navbar {
     width: 100%;
   }
   .btn_group {
     width: 190px;
+    padding: 0px 35px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
+  }
+  .btn {
+    font-size: 10px;
   }
   .btn:hover {
     color: lightgray;
